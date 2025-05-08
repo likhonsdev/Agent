@@ -1,0 +1,103 @@
+# Code Agent Platform Documentation
+
+## Overview
+
+This is a modern development environment that combines AI assistance with powerful code editing capabilities.
+
+## Features
+
+### 1. File Management
+- File explorer with tree view
+- File creation and editing
+- Multi-file search
+
+### 2. Code Editing
+- Syntax highlighting for multiple languages
+- AI-powered code completion
+- Real-time error checking
+
+### 3. AI Integration
+- Chat interface for code assistance
+- Code generation and refactoring
+- Natural language to code conversion
+
+### 4. Version Control
+- Git integration
+- Version history
+- Deployment management
+
+### 5. MDX Features
+
+```tsx
+// Example MDX component usage
+import { MDXDoc } from './components/MDXDoc';
+
+function Documentation() {
+  return (
+    <MDXDoc
+      content={mdxContent}
+      title="Project Documentation"
+    />
+  );
+}
+```
+
+### 6. Code Examples
+
+Here's a sample React component:
+
+```tsx project="demo" file="Button.tsx" type="react"
+interface ButtonProps {
+  children: React.ReactNode;
+  onClick?: () => void;
+  variant?: 'primary' | 'secondary';
+}
+
+export function Button({ children, onClick, variant = 'primary' }: ButtonProps) {
+  return (
+    <button
+      onClick={onClick}
+      className={`btn btn-${variant}`}
+    >
+      {children}
+    </button>
+  );
+}
+```
+
+## Getting Started
+
+1. Clone the repository
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
+npm run dev
+```
+
+4. Open your browser and navigate to http://localhost:3000
+
+## Project Structure
+
+The project follows a standard React + TypeScript structure:
+
+- `/src` - Source code
+  - `/components` - React components
+  - `/pages` - Page components
+  - `/utils` - Utility functions
+  - `/services` - Service layer
+  - `/types` - TypeScript types
+  - `/mdx-components` - MDX-specific components
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Submit a pull request
+
+## License
+
+MIT License - see LICENSE file for details
